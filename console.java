@@ -1,14 +1,14 @@
 /*
- * Libreria di Federico Slongo.
+ * Library created by Federico Slongo.
  * https://github.com/FedericoSlongo
  */
-package org.example;
+package [package_name];
 
 import java.util.Scanner;
 
-public class Library {
+public class console {
     Scanner var;
-    public Library() {
+    public console() {
         var = new Scanner(System.in);
     }
 
