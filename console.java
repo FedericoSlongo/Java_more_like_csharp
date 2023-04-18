@@ -1,6 +1,8 @@
 /*
  * Library created by Federico Slongo.
  * https://github.com/FedericoSlongo
+ *
+ * This .java is part of the https://github.com/FedericoSlongo/Java_more_like_csharp repo
  */
 package [package_name];
 
