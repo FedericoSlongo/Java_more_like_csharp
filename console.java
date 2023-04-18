@@ -26,8 +26,13 @@ public class console {
     }
 
     //Reads a line from the console and converts it to a float
-    public float Readfloat() {
+    public float ReadFloat() {
         return var.nextFloat();
+    }
+
+    //Reads a line from the console and converts it to a double
+    public double ReadDouble() {
+        return var.nextDouble();
     }
 
     //Prints out the input it recives when the function is called
