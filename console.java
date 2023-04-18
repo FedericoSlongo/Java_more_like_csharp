@@ -4,6 +4,7 @@
  *
  * This .java is part of the https://github.com/FedericoSlongo/Java_more_like_csharp repo
  */
+
 package [package_name];
 
 import java.util.Scanner;
