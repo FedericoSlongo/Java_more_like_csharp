@@ -29,7 +29,7 @@ public class files {
             return null;
     }
 
-    public String ReadAllLine() throws IOException {
+    public String ReadAllLines() throws IOException {
         String Everything = "";
         while((line=fr.readLine())!=null)
             Everything += line;
