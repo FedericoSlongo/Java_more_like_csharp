@@ -7,6 +7,7 @@
 
 package [package_name];
 
+import java.util.Objects;
 import java.util.Scanner;
 
 public class console {
@@ -36,7 +37,7 @@ public class console {
     }
 
     //Prints out the input it recives when the function is called
-    public void WriteLine(String print){
+    public static void WriteLine(Objects print){
         System.out.println(print);
     }
 }
