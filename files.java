@@ -7,17 +7,19 @@
 
 package [package_name];
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
+import java.io.FileWriter;
 
 public class files {
     private BufferedReader fr;
+    private File f;
+    FileWriter myWriter;
     private String line;
 
-    public files(String file_name) throws FileNotFoundException {
+    public files(String file_name) throws IOException {
         fr = new BufferedReader(new FileReader(file_name));
+        f = new File(file_name);
+        myWriter = new FileWriter(file_name);
         line = "";
     }
 
@@ -34,5 +36,16 @@ public class files {
         while((line=fr.readLine())!=null)
             Everything += line;
         return Everything;
+    }
+
+    public boolean createNewFile() throws IOException {
+        return f.createNewFile();
+    }
+
+    public void WriteLine(String toWrite) throws IOException {
+        myWriter.write(toWrite);
+    }
+    public void close() throws IOException {
+        myWriter.close();
     }
 }
